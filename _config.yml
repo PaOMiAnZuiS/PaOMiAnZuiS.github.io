@@ -1,5 +1,6 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
+title: PMGG's Blog
+description: 测试开发、工程基础、AI 协作体验与个人成长记录。
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
+lang: zh-CN

@@ -5,26 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/pmgg.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
   </head>
 
   <body>
+    <div class="site-backdrop" aria-hidden="true"></div>
 
-    <header>
+    <header class="site-header">
       <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>PMGG‘s Blog</h1>
-        </a>
-        <h2>Do not go gentle into that good night.</h2>
+        <div class="header-inner">
+          <a id="a-title" class="brand-link" href="{{ '/' | relative_url }}">
+            <h1>PMGG's Blog</h1>
+          </a>
+          <nav class="top-nav" aria-label="主要导航">
+            <a href="{{ '/' | relative_url }}#ai-notes">AI札记</a>
+            <a href="{{ '/' | relative_url }}#knowledge-map">知识地图</a>
+            <a href="{{ '/welcome-page.html' | relative_url }}">关于</a>
+          </nav>
+        </div>
+        <h2>Build, test, think, and learn with AI.</h2>
       </div>
     </header>
 
-    <div class="container">
+    <main class="container site-main">
       <section id="main_content">
         {{ content }}
       </section>
-    </div>
+    </main>
 
     {% if site.google_analytics %}
       <script>
